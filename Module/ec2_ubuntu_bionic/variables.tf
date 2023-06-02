@@ -14,3 +14,6 @@ variable "security_group_id" {
 variable "eip_public_ip" {
   type = string
 }
+variable "ssh_key" {
+  type = string
+}
