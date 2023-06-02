@@ -17,3 +17,6 @@ variable "eip_public_ip" {
 variable "ssh_key" {
   type = string
 }
+variable "devops_key_name" {
+  type = string
+}

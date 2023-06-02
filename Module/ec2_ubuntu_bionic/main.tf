@@ -23,7 +23,7 @@ data "aws_ami" "ubuntu" {
 resource "aws_instance" "ec2" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = var.instance_type
-  key_name      = "devops-mathis"
+  key_name      = var.devops_key_name
 
   vpc_security_group_ids = [var.security_group_id]
 
