@@ -4,7 +4,7 @@ module "ec2module" {
   tag_name = "mini_projet"
   security_group_id = module.security_group.security_group_id
   eip_public_ip = module.create_eip.public_ip
-  ssh_key = "../ssh_key/devops-example.pem"
+  ssh_key = file("../ssh_key/devops-example.pem")
   devops_key_name = "devops-example"
 }
 
